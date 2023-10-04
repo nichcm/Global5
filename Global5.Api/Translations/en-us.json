@@ -1,0 +1,13 @@
+﻿{
+  "LanguageCode": "en-us",
+  "DictionaryMessages": [
+    {
+      "key": "hi",
+      "value": "Welcome!"
+    },
+    {
+      "key": "hi-02",
+      "value": "Welcome 02!"
+    }
+  ]
+}

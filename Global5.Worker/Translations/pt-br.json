@@ -1,0 +1,37 @@
+﻿{
+  "LanguageCode": "pt-br",
+  "DictionaryMessages": [
+    {
+      "key": "schedule-status-process",
+      "value": "Em Processamento."
+    },
+    {
+      "key": "schedule-status-finish",
+      "value": "Processado finalizado."
+    },
+    {
+      "key": "schedule-status-error",
+      "value": "Problema no processamento."
+    },
+    {
+      "key": "schedule-status-notfound",
+      "value": "Sem dados para processamento."
+    },
+    {
+      "key": "schedule-validation-warning",
+      "value": "Atenção na validação realizada."
+    },
+    {
+      "key": "schedule-validation-notfound",
+      "value": "Informação não encontrada."
+    },
+    {
+      "key": "schedule-validation-success",
+      "value": "Validação realizada com sucesso."
+    },
+    {
+      "key": "schedule-validation-error",
+      "value": "Problema com validação."
+    }
+  ]
+}

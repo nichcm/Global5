@@ -1,0 +1,13 @@
+﻿{
+  "LanguageCode": "es-ar",
+  "DictionaryMessages": [
+    {
+      "key": "hi",
+      "value": "Welcome!"
+    },
+    {
+      "key": "hi-02",
+      "value": "Welcome 02!"
+    }
+  ]
+}

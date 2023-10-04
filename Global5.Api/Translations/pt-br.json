@@ -1,0 +1,557 @@
+﻿{
+  "LanguageCode": "pt-br",
+  "DictionaryMessages": [
+    {
+      "key": "token-required",
+      "value": "O Token não foi informado. Para esta operação é obrigatório ter um Token!"
+    },
+    {
+      "key": "id-required",
+      "value": "O Id da CPR é obrigatório!"
+    },
+    {
+      "key": "date-operation-start-required",
+      "value": "Data Inicial da Pesquisa é obrigatória!"
+    },
+    {
+      "key": "date-operation-end-required",
+      "value": "Data Final da Pesquisa é obrigatória!"
+    },
+    {
+      "key": "level-required",
+      "value": "Categoria de Erro é obrigatória!"
+    },
+    {
+      "key": "event-name-required",
+      "value": "Nome do Evento é obrigatório!"
+    },
+    {
+      "key": "message-required",
+      "value": "Mensagem é obrigatória!"
+    },
+    {
+      "key": "level-invalid",
+      "value": "A Categoria de Erro informada não é valida"
+    },
+    {
+      "key": "user-notfound",
+      "value": "O usuário informado não existe!"
+    },
+    {
+      "key": "user-not-company",
+      "value": "O usuário informado não pertence à empresa logada!"
+    },
+    {
+      "key": "recovery-pass",
+      "value": "Sistema Atento - Recuperação de Senha"
+    },
+    {
+      "key": "send-email-ok",
+      "value": "E-mail enviado com sucesso!"
+    },
+    {
+      "key": "recovery-pass-error",
+      "value": "Não foi possível executar a url esquecisenha. Entre em contato com a equipe de suporte."
+    },
+    {
+      "key": "user-update-pass",
+      "value": "Senha alterada com sucesso!"
+    },
+    {
+      "key": "invalid-token",
+      "value": "Usuário do token diferente do usuário informado."
+    },
+    {
+      "key": "playerid-error",
+      "value": "Erro. O playerId do usuário não foi alterado."
+    },
+    {
+      "key": "user-registered-email",
+      "value": "Já existe um usuário cadastrado com este e-mail!"
+    },
+    {
+      "key": "video-added",
+      "value": "Vídeo adicionado."
+    },
+    {
+      "key": "video-error",
+      "value": "Erro. Ao inserir vídeo."
+    },
+    {
+      "key": "entrance-turn-added-error",
+      "value": "Erro ao inserir Turno."
+    },
+    {
+      "key": "entrance-turn-update-error",
+      "value": "Erro ao atualizar Turno."
+    },
+    {
+      "key": "entrance-turn-deactivated",
+      "value": "Turno desativado."
+    },
+    {
+      "key": "invalid-date-start-format",
+      "value": "Erro. Data início. Informe a data no formato: yyyy-MM-dd "
+    },
+    {
+      "key": "invalid-date-end-format",
+      "value": "Erro. Data final. Informe a data no formato: yyyy-MM-dd"
+    },
+    {
+      "key": "invalid-date",
+      "value": "A data de início deve ser menor ou igual a data final."
+    },
+    {
+      "key": "invalid-date-now",
+      "value": "A data da tratativa deve ser menor ou igual a hoje."
+    },
+    {
+      "key": "treatative-added",
+      "value": "Tratativa adicionada"
+    },
+    {
+      "key": "treatative-error",
+      "value": "Erro. Ao adicionar tratativa."
+    },
+    {
+      "key": "treatative-update",
+      "value": "Tratativa atualizada"
+    },
+    {
+      "key": "treatative-status-empty",
+      "value": "Erro. StatusTratativa não pode ser nulo."
+    },
+    {
+      "key": "treatative-status-error",
+      "value": "Erro. O valor StatusTratativa não pode ser diferente de T ou C."
+    },
+    {
+      "key": "treatative-existing",
+      "value": "Erro. A avaliação em causa já possuí uma tratativa"
+    },
+    {
+      "key": "treatative-collaborator-error",
+      "value": "Erro. Colaborador não faz parte da empresa selecionada."
+    },
+    {
+      "key": "treatative-create-error",
+      "value": "Erro. Não foi possível criar Tratativa."
+    },
+    {
+      "key": "treatative-notfound",
+      "value": "Erro. TratativaID não localizada."
+    },
+    {
+      "key": "treatative-update-error",
+      "value": "Erro. Não foi possível alterar Tratativa."
+    },
+    {
+      "key": "treatative-id-empty",
+      "value": "Erro. TratativaID não pode ser nulo."
+    },
+    {
+      "key": "token-collaborator-error",
+      "value": "Credenciais inválidas para Colaborador."
+    },
+    {
+      "key": "token-return-error",
+      "value": "Não foi possível retornar o Token."
+    },
+    {
+      "key": "token-refresh-error",
+      "value": "Não foi possível validar o refresh token."
+    },
+    {
+      "key": "token-refresh-invalid",
+      "value": "Refresh token inválido."
+    },
+    {
+      "key": "company-user-invalid",
+      "value": "A empresa do usuário está inativa."
+    },
+    {
+      "key": "company-user-notfound",
+      "value": "Empresa selecionada não existe."
+    },
+    {
+      "key": "token-user-error",
+      "value": "Credenciais inválidas para usuário."
+    },
+    {
+      "key": "duplicate-login",
+      "value": "Login duplicado!"
+    },
+    {
+      "key": "treatment-type-existing",
+      "value": "O nome do tipo da tratativa já existe"
+    },
+    {
+      "key": "treatment-type-added",
+      "value": "tipo tratativa adicionada"
+    },
+    {
+      "key": "treatment-type-error",
+      "value": "Erro. Ao inserir tipo tratativa."
+    },
+    {
+      "key": "app-save",
+      "value": "Todas os registros foram gravados com sucesso!"
+    },
+    {
+      "key": "app-save-error",
+      "value": "Nem todas as operacoes foram completadas com sucesso. Debugar a API com payload pode ser necessario. Por favor entrar em contato com o desenvolvedor."
+    },
+    {
+      "key": "response-collecting",
+      "value": "Coletando lista de respondidos pertencentes ao questionario:>>"
+    },
+    {
+      "key": "response-collecting-error",
+      "value": "Não foi possível coletar AvaliacaoID a partir do questionarioID: {}."
+    },
+    {
+      "key": "collaborator-error-insert",
+      "value": "Erro. A o inserir colaborador."
+    },
+    {
+      "key": "reaction-doc-notfound",
+      "value": "Erro. O CPF do colaborador não foi localizado. "
+    },
+    {
+      "key": "rally-error",
+      "value": "Falha na comunicação com o Servidor. Registro de embarque não foi possível."
+    },
+    {
+      "key": "registered-shipment",
+      "value": "Embarque registrado."
+    },
+    {
+      "key": "page-create-error",
+      "value": "Não foi possível criar nova Página. Algum erro no conteúdo?"
+    },
+    {
+      "key": "office-validate-field",
+      "value": "Erro. O campo 'Pergunta' é obrigatório."
+    },
+    {
+      "key": "office-collaborator-doc-empty",
+      "value": "O CPF não pode ser nulo. informe o CPF."
+    },
+    {
+      "key": "office-collaborator-name-empty",
+      "value": "O nome do colaborador não pode ser nulo."
+    },
+    {
+      "key": "office-collaborator-company-empty",
+      "value": "O nome da empresa do colaborador não pode ser nulo."
+    },
+    {
+      "key": "office-collaborator-existing",
+      "value": "Colaborador já existe.Para atualizar colaborador use a endpoint /api/officeColaborador/update."
+    },
+    {
+      "key": "office-collaborator-create-error",
+      "value": "Não foi possível criar novo Colaborador. Algum erro no conteúdo?"
+    },
+    {
+      "key": "office-collaborator-insert-error",
+      "value": "Erro. A o inserir Colaborador."
+    },
+    {
+      "key": "collaborator-not-found",
+      "value": "Colaborador não existe."
+    },
+    {
+      "key": "collaborator-error-change",
+      "value": "Erro. A o alterar Colaborador."
+    },
+    {
+      "key": "notification-create-error",
+      "value": "Não foi possível criar newNotifica. Algum erro no conteúdo?"
+    },
+    {
+      "key": "nop-name-existing",
+      "value": "Nome do nop já existe"
+    },
+    {
+      "key": "nop-name-existing-error",
+      "value": "Erro. Nome do nop já existe"
+    },
+    {
+      "key": "nop-update-error",
+      "value": "Erro ao atualizar nop"
+    },
+    {
+      "key": "nop-permission-update",
+      "value": "O usuário não pode alterar a Visualização do Resultado da Avaliação, pois o perfil do grupo de usuário não é administrador."
+    },
+    {
+      "key": "non-existent-shift",
+      "value": "Turno inexistente"
+    },
+    {
+      "key": "treatment-level-existing",
+      "value": "O nome do nível da tratativa já existe"
+    },
+    {
+      "key": "treatment-level-existing",
+      "value": "nivel tratativa adicionada"
+    },
+    {
+      "key": "treatment-level-added-error",
+      "value": "Erro. Ao inserir nivel tratativa."
+    },
+    {
+      "key": "normality-reason-existing",
+      "value": "A descrição breve do motivo da anormalidade já existe"
+    },
+    {
+      "key": "normality-reason-added",
+      "value": "Motivo da anormalidade adicionado"
+    },
+    {
+      "key": "normality-reason-added-error",
+      "value": "Erro. Ao inserir motivo da anormalidade."
+    },
+    {
+      "key": "log-error",
+      "value": "Não foi possivel logar esses dados"
+    },
+    {
+      "key": "history-update",
+      "value": "Preparando para update do historico calculado..."
+    },
+    {
+      "key": "history-update-calc",
+      "value": "calculando media movel simples..."
+    },
+    {
+      "key": "history-no-register",
+      "value": "Não há registros de avaliações completados por esse colaborador nesse tipo de jornada."
+    },
+    {
+      "key": "history-count",
+      "value": "Contagem de registros coletados:"
+    },
+    {
+      "key": "history-list",
+      "value": "lista Avaliacao historico contém menos amostra que media movel requer."
+    },
+    {
+      "key": "history-update-warning",
+      "value": "Dados do historico não puderam ser atualizados."
+    },
+    {
+      "key": "function-existing",
+      "value": "O nome da função já existe"
+    },
+    {
+      "key": "function-added",
+      "value": "Funcão adicionada"
+    },
+    {
+      "key": "function-added-error",
+      "value": "Erro. Ao inserir função."
+    },
+    {
+      "key": "estimate-warning",
+      "value": "Registro de avaliacao não continha dados de jornada ou registro de hardware não contêm dados do tipo de hardware (desktop,mobile ou tablet.)"
+    },
+    {
+      "key": "estimate-error",
+      "value": "Erro. A o enviar score do motorista para o sistema RSP. "
+    },
+    {
+      "key": "estimate-notfound",
+      "value": "estimarResultado mobile encontrou CorReacao nao prevista."
+    },
+    {
+      "key": "scale-create-error",
+      "value": "Não foi possível criar nova Escala. Algum erro no conteúdo?"
+    },
+    {
+      "key": "scale-update-error",
+      "value": "Não foi possível alterar Escala. Algum erro no conteúdo?"
+    },
+    {
+      "key": "company-email-invalid",
+      "value": "E-mail incorreto!"
+    },
+    {
+      "key": "company-user-existing",
+      "value": "Já existe um usuário cadastrado com este e-mail!"
+    },
+    {
+      "key": "company-value-error",
+      "value": "O valor dos intervalos não pode ser negativo"
+    },
+    {
+      "key": "company-value-repeat-error",
+      "value": "O valor do campo 'Receber alerta do Teste não Repetiu?' deve ser 0 ou 1"
+    },
+    {
+      "key": "email-notification-send-ok",
+      "value": "Sucesso!"
+    },
+    {
+      "key": "email-notification-url-error",
+      "value": "Não foi possível executar a url notificar reprovação do colaborador. Entre em contato com a equipe de suporte."
+    },
+    {
+      "key": "email-notification-send-error",
+      "value": "Erro. Ao enviar emails."
+    },
+    {
+      "key": "chronotype-error",
+      "value": "Não foi possível criar novo Cronotipo. Algum erro no conteúdo?"
+    },
+    {
+      "key": "control-version-create-error",
+      "value": "Não foi possível criar novo ControleVersao. Algum erro no conteúdo?"
+    },
+    {
+      "key": "control-version-update-error",
+      "value": "Não foi possível alterar ControleVersao. Algum erro no conteúdo?"
+    },
+    {
+      "key": "content-5tag-error",
+      "value": "Erro. Adicione até 5 tags."
+    },
+    {
+      "key": "content-date-error",
+      "value": "Erro. A data é obrigatória."
+    },
+    {
+      "key": "content-added",
+      "value": "Conteúdo adicionado"
+    },
+    {
+      "key": "content-added-error",
+      "value": "Erro. Ao inserir Conteúdo."
+    },
+    {
+      "key": "content-update",
+      "value": "Conteúdo atualizado"
+    },
+    {
+      "key": "content-update-error",
+      "value": "Erro. Ao atualizar Conteúdo."
+    },
+    {
+      "key": "collaborator-id-notfound",
+      "value": "Tanto o cronotipoid como a escalaid não existem no banco"
+    },
+    {
+      "key": "collaborator-field-empty",
+      "value": "O campo cronotipo é de preenchimento obrigatório."
+    },
+    {
+      "key": "collaborator-scale-empty",
+      "value": "O campo escala é de preenchimento obrigatório."
+    },
+    {
+      "key": "collaborator-update-ok",
+      "value": "Dados alterados com sucesso."
+    },
+    {
+      "key": "collaborator-graph-error",
+      "value": "Erro ao consultar gráfico tendência do colaborador."
+    },
+    {
+      "key": "collaborator-id-empty",
+      "value": "Por favor, informe o id do colaborador."
+    },
+    {
+      "key": "collaborator-type-report-error",
+      "value": "Erro. Informe o tipo de relatório."
+    },
+    {
+      "key": "collaborator-update-error",
+      "value": "Erro. O cronotipo do colaborador não foi alterado."
+    },
+    {
+      "key": "collaborator-status-error",
+      "value": "Erro. O status do colaborador não foi alterado."
+    },
+    {
+      "key": "category-added",
+      "value": "Categoria adicionada"
+    },
+    {
+      "key": "category-added-error",
+      "value": "Erro. Ao inserir Categoria."
+    },
+    {
+      "key": "category-update",
+      "value": "Categoria atualizada"
+    },
+    {
+      "key": "category-update-error",
+      "value": "Erro. Ao atualizar Categoria."
+    },
+    {
+      "key": "collaborator-doc-needed",
+      "value": "O campo CPF é obrigatório."
+    },
+    {
+      "key": "collaborator-error-insert",
+      "value": "Não foi possível criar novo Colaborador."
+    },
+    {
+      "key": "collaborator-error-update",
+      "value": "Erro. Registro de colaborador não foi alterado."
+    },
+    {
+      "key": "start-date-needed",
+      "value": "Erro. Data inicial obrigatória."
+    },
+    {
+      "key": "end-date-needed",
+      "value": "Erro. Data final obrigatória."
+    },
+    {
+      "key": "calendar-year-invalid",
+      "value": "Informe um ano válido!"
+    },
+    {
+      "key": "calendar-month-invalid",
+      "value": "Informe um mês válido!"
+    },
+    {
+      "key": "calendar-type-invalid",
+      "value": "Tipo de registro inválido!"
+    },
+    {
+      "key": "calendar-day-invalid",
+      "value": "Informe dias válidos!"
+    },
+    {
+      "key": "calendar-nop-invalid",
+      "value": "Informe um Nop válido!"
+    },
+    {
+      "key": "calendar-error",
+      "value": "Erro. Ao preencher calendário por folga."
+    },
+    {
+      "key": "calendar-replicate-error",
+      "value": "Erro. Ao replicar o calendário por NOP."
+    },
+    {
+      "key": "calendar-create",
+      "value": "Sucesso!"
+    },
+    {
+      "key": "register-validate",
+      "value": "todos os registros foram armazenados no sistema. Validação deverá ocorrer dentro de 24hr."
+    },
+    {
+      "key": "register-warning",
+      "value": "Sucesso parcial: nem todos os registros foram armazenados no sistema. Validação deverá ocorrer dentro de 24hr."
+    },
+    {
+      "key": "evaluation-error",
+      "value": "O colaborador não pode ser nulo. Não foi possível salvar a avaliação."
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+﻿{
+  "LanguageCode": "es-ar",
+  "DictionaryMessages": [
+    {
+      "key": "login-required",
+      "value": "El campo de inicio de sesión es obligatorio"
+    },
+    {
+      "key": "pass-required",
+      "value": "El campo de clave es obligatorio"
+    },
+    {
+      "key": "pass-required",
+      "value": "El campo de clave es obligatorio"
+    },
+    {
+      "key": "datasource-required",
+      "value": "El campo de origen es obligatorio"
+    },
+    {
+      "key": "language-required",
+      "value": "El campo de idioma es obligatorio"
+    },
+    {
+      "key": "userid-required",
+      "value": "Se requiere código de usuario"
+    },
+    {
+      "key": "statusid-required",
+      "value": "La configuración de estado es obligatoria"
+    },
+    {
+      "key": "access-token-required",
+      "value": "El Token de Acceso es obligatorio"
+    },
+    {
+      "key": "refresh-token-required",
+      "value": "La Actualización del Token es obligatorio"
+    },
+    {
+      "key": "email-required",
+      "value": "El correo electrónico es obligatorio"
+    },
+    {
+      "key": "cell-required",
+      "value": "El teléfono móvil es obligatorio"
+    },
+    {
+      "key": "doc-required",
+      "value": "El DNI es obligatorio"
+    },
+    {
+      "key": "taxdoc-required",
+      "value": "La Clave Fiscal es obligatoria"
+    },
+    {
+      "key": "birthdate-required",
+      "value": "La fecha de cumpleaños es obligatoria"
+    },
+    {
+      "key": "termsignature-required",
+      "value": "El campo de Actualización del Token es obligatorio"
+    },
+    {
+      "key": "pass-required",
+      "value": "La contraseña es obligatoria"
+    },
+    {
+      "key": "token-code-required",
+      "value": "El Token es obligatorio"
+    },
+    {
+      "key": "type-token-code-required",
+      "value": "El Tipo de Token es obligatorio"
+    },
+    {
+      "key": "contenttype-required",
+      "value": "tipo de contenido requerido"
+    },
+    {
+      "key": "contentfile-required",
+      "value": "archivo de contenido requerido"
+    },
+    {
+      "key": "type-imagedocument-required",
+      "value": "tipo de documento requerido"
+    },
+    {
+      "key": "operation-Name-required",
+      "value": "Operación de Transferencia requerido"
+    },
+    {
+      "key": "justification-required",
+      "value": "Comentarios requerido"
+    },
+    {
+      "key": "taxdoc-credit-required",
+      "value": "La Clave Fiscal de Crédito es obligatoria"
+    },
+    {
+      "key": "name-required",
+      "value": "Nombre requerido"
+    },
+    {
+      "key": "cbu-credit-required",
+      "value": "CBU Crédito requerido"
+    },
+    {
+      "key": "favorite-required",
+      "value": "Favorito requerido"
+    },
+    {
+      "key": "cvu-id-required",
+      "value": "ID CVU requerido"
+    },
+    {
+      "key": "alias-required",
+      "value": "Alias requerido"
+    },
+    {
+      "key": "new-alias-required",
+      "value": "Nuevo Alias requerido"
+    },
+    {
+      "key": "unique-virtual-code-id-required",
+      "value": "ID CVU requerido"
+    },
+    {
+      "key": "image-document-id-required",
+      "value": "ID Imagem requerido"
+    },
+    {
+      "key": "holder-name-required",
+      "value": "Titular requerido"
+    },
+    {
+      "key": "holder-type-required",
+      "value": "Tipo de Titular requerido"
+    },
+    {
+      "key": "zipcode-required",
+      "value": "Código Postal requerido"
+    },
+    {
+      "key": "user-address-id",
+      "value": "ID de Domicilio requerido"
+    },
+    {
+      "key": "city-required",
+      "value": "Ciudad requerido"
+    },
+    {
+      "key": "state-required",
+      "value": "Estado requerido"
+    },
+    {
+      "key": "address-required",
+      "value": "Domicilio requerido"
+    },
+    {
+      "key": "address-number-required",
+      "value": "Número de Domicilio requerido"
+    },
+    {
+      "key": "address-number-required",
+      "value": "Número de Domicilio requerido"
+    },
+    {
+      "key": "user-additional-data-id-required",
+      "value": "ID Datos Adicionales requerido"
+    },
+    {
+      "key": "maritalStatus-required",
+      "value": "Estado Civil requerido"
+    },
+    {
+      "key": "occupation-id-required",
+      "value": "El código de Ocupación requerido."
+    },
+    {
+      "key": "occupation-name-required",
+      "value": "Ocupación requerido."
+    },
+    {
+      "key": "bank-id-required",
+      "value": "El código de Banco requerido."
+    },
+    {
+      "key": "bank-name-required",
+      "value": "Banco requerido."
+    },
+    {
+      "key": "bank-type-required",
+      "value": "Tipo de Banco requerido."
+    },
+    {
+      "key": "operation-type-id-required",
+      "value": "El código de Tipo de operación requerido."
+    },
+    {
+      "key": "operation-type-name-required",
+      "value": "Tipo de operación requerido."
+    },
+    {
+      "key": "token-invalid",
+      "value": "Su Token no es válido. Ingresar de nuevo"
+    },
+    {
+      "key": "token-code-invalid",
+      "value": "Su Token no es válido. Ingresar de nuevo"
+    },
+    {
+      "key": "token-ok",
+      "value": "Su Token aún no ha caducado"
+    },
+    {
+      "key": "token-refresh",
+      "value": "Token de Actualización creado con éxito"
+    },
+    {
+      "key": "token-create-user-invalid",
+      "value": "El código de token no es válido"
+    },
+    {
+      "key": "token-create-user-ok",
+      "value": "Código de token validado correctamente"
+    },
+    {
+      "key": "forgot-password-email-invalid",
+      "value": "El código de token no es válido"
+    },
+    {
+      "key": "forgot-password-email-ok",
+      "value": "Código de token validado correctamente"
+    },
+    {
+      "key": "token-bancocoinag-ok",
+      "value": "Código de token validado correctamente"
+    },
+    {
+      "key": "cbu-credit-debit-equal",
+      "value": "La CBU de Crédito y Débito son iguales"
+    },
+    {
+      "key": "token-bancocoinag-invalid",
+      "value": "El código de token no es válido"
+    },
+    {
+      "key": "email-double",
+      "value": "Correo electrónico registrado a nombre de otra persona"
+
+    },
+    {
+      "key": "cell-double",
+      "value": "Teléfono Móvil registrado a nombre de otra persona"
+    },
+    {
+      "key": "doc-double",
+      "value": "DNI registrado a nombre de otra persona"
+    },
+    {
+      "key": "taxdoc-double",
+      "value": "Clave Fiscal registrada a nombre de otra persona"
+    },
+    {
+      "key": "taxdoc-invalid",
+      "value": "La Clave Fiscal no es válida"
+    },
+    {
+      "key": "taxdoc-credit-invalid",
+      "value": "La Clave Fiscal de Crédito no es válida"
+    },
+    {
+      "key": "doc-invalid",
+      "value": "El DNI no es válido"
+    },
+    {
+      "key": "birthdate-invalid",
+      "value": "La fecha de cumpleaños no es válida"
+    },
+    {
+      "key": "age-invalid",
+      "value": "Edad no válida para crear una cuenta"
+    },
+    {
+      "key": "type-imagedocument-invalid",
+      "value": "Tipo de Documento no es válido"
+    },
+    {
+      "key": "name-invalid",
+      "value": "Nombre no es válido"
+    },
+    {
+      "key": "date-transaction-invalid",
+      "value": "Fecha de Transacción no válida"
+    },
+    {
+      "key": "operation-value-invalid",
+      "value": "Monto de Transacción no válida"
+    },
+    {
+      "key": "favored-name-invalid",
+      "value": "Nombre de Beneficiario no válido"
+    },
+    {
+      "key": "account-balance-limit-invalid",
+      "value": "Límite de Cuenta no válido"
+    },
+    {
+      "key": "status-id-invalid",
+      "value": "Estado ID no válido"
+    },
+    {
+      "key": "account-transaction-invalid",
+      "value": "API no disponible en este momento. Intentar nuevamente más tarde."
+    },
+    {
+      "key": "account-transaction-ok",
+      "value": "Transacción Exitosa."
+    },
+    {
+      "key": "change-pass-error",
+      "value": "Problemas en el Cambio de la Contraseña."
+    },
+    {
+      "key": "change-pass-ok",
+      "value": "Cambio de Contraseña Exitoso."
+    },
+    {
+      "key": "account-balance-limit-available",
+      "value": "Límite de Cuenta Insuficiente."
+    },
+    {
+      "key": "user-notfound",
+      "value": "La cuenta no existe"
+    },
+    {
+      "key": "cvu-id-notfound",
+      "value": "CVU no existe."
+    },
+    {
+      "key": "cbu-notfound",
+      "value": "CBU no existe."
+    },
+    {
+      "key": "operation-type-notfound",
+      "value": "Tipo de operación no existe."
+    },
+    {
+      "key": "bank-notfound",
+      "value": "Banco no existe."
+    },
+    {
+      "key": "auth-notfound",
+      "value": "Usuario o contraseña no válidos."
+    },
+    {
+      "key": "reverse-transfer-message",
+      "value": "La Transacción fué Cancelada y se regreso el dinero a su Cuenta."
+    },
+    {
+      "key": "notice-transfer-message",
+      "value": "Se ha realizado un Crédito en su Cuenta."
+    },
+    {
+      "key": "notice-transfer-message",
+      "value": "Se ha realizado un Crédito en su Cuenta."
+    },
+    {
+      "key": "alias-registered",
+      "value": "Alias ya registrado."
+    },
+    {
+      "key": "alias-pending",
+      "value": "El alias se cambiará después de 24 horas."
+    },
+    {
+      "key": "alias-ok",
+      "value": "Alias ​​cambiado con éxito."
+    },
+    {
+      "key": "alias-notfound",
+      "value": "Alias ​​no encontrado."
+    },
+    {
+      "key": "status-pending",
+      "value": "Pendiente"
+    },
+    {
+      "key": "status-lead",
+      "value": "Activo"
+    },
+    {
+      "key": "status-create",
+      "value": "Esperando Creación de Cuenta Digital"
+    },
+    {
+      "key": "status-approved",
+      "value": "Aprobado"
+    },
+    {
+      "key": "status-reprobate",
+      "value": "No Aprobado"
+    },
+    {
+      "key": "status-monetized",
+      "value": "Cuenta Digital Creada"
+    },
+    {
+      "key": "status-error",
+      "value": "Error en la Creación de la Cuenta Digital"
+    },
+    {
+      "key": "status-deleted",
+      "value": "Cuenta digital cancelada."
+    },
+    {
+      "key": "error-api",
+      "value": "Error de llamada a la API"
+    },
+    {
+      "key": "create-account-digital-error",
+      "value": "Error en el proceso de creación de cuenta digital."
+    },
+    {
+      "key": "create-account-digital-ok",
+      "value": "Proceso de creación de cuenta exitoso."
+    },
+    {
+      "key": "reconciled-transaction-id",
+      "value": "Transacción conciliada."
+    },
+    {
+      "key": "divergence-transaction-id",
+      "value": "Número de transacción diferente."
+    },
+    {
+      "key": "divergence-cbu-debit",
+      "value": "CBU de débito divergente."
+    },
+    {
+      "key": "divergence-taxdoc-cbu-debit",
+      "value": "Documento fiscal de débito divergente."
+    },
+    {
+      "key": "divergence-cvu-debit",
+      "value": "CVU de Débito divergente."
+    },
+    {
+      "key": "divergence-taxdoc-cvu-debit",
+      "value": "Documento fiscal de Débito divergente."
+    },
+    {
+      "key": "divergence-cbu-credit",
+      "value": "CBU de crédito divergente."
+    },
+    {
+      "key": "divergence-taxdoc-cbu-credit",
+      "value": "Documento fiscal de crédito divergente."
+    },
+    {
+      "key": "divergence-operation-name",
+      "value": "Nombre de operación diferente."
+    },
+    {
+      "key": "divergence-justification",
+      "value": "justificación divergente,"
+    },
+    {
+      "key": "divergence-operation-date",
+      "value": "fecha divergente."
+    },
+    {
+      "key": "awaiting-analysis",
+      "value": "esperando analisis."
+    },
+    {
+      "key": "not-found-in-ecobro",
+      "value": "Transacción no encontrada en e-cobro."
+    },
+    {
+      "key": "operation-type-registered",
+      "value": "Tipo de operación ya registrado."
+    },
+    {
+      "key": "bank-registered",
+      "value": "Banco ya registrado."
+    },
+    {
+      "key": "token-create-user-email",
+      "value": "<p><strong>@Name</strong>, Utilice <strong>@Token</strong> como el c&oacute;digo de seguridad de <strong>@Team</strong> para confirmar la<em> creaci&oacute;n de su cuenta</em>.</p><p>&nbsp;</p><p>Nos vemos luego,</p><p><strong>Equipo @Team</strong></p>"
+    },
+    {
+      "key": "token-create-user-email-title",
+      "value": "e-cobro :: Solicita la creación de tu cuenta."
+    },
+    {
+      "key": "forgot-password-email",
+      "value": "<p><strong>@Name</strong>, Utilice <strong>@Token</strong> como c&oacute;digo de seguridad de su cuenta <strong>@Team</strong> para cambiar su contrase&ntilde;a.</p><p>&nbsp;</p><p>Nos vemos luego,</p><p><strong>Equipo @Team</strong></p>"
+    },
+    {
+      "key": "forgot-password-email-title",
+      "value": "e-cobro :: Solicitud de Cambio de Contraseña."
+    },
+    {
+      "key": "welcome-create-account-email-title",
+      "value": "e-cobro :: Bienvenido/a"
+    },
+    {
+      "key": "welcome-create-account-email",
+      "value": "<p><strong>Hola</strong> @Name, <strong>e-cobro</strong> inicia un <strong>nuevo cap&iacute;tulo en la historia de los bancos argentinos</strong> y estamos felices de que este viaje comience con <strong>vos</strong>.</p><p>Somos un banco con credibilidad, seguridad, experiencia, tecnolog&iacute;a y lo mejor del mundo digital. <strong>Todo lo que necesitar tener en un banco</strong>.</p><p>At&eacute; mais,<br /><strong>Equipo @Team</strong></p>"
+    }
+  ]
+}

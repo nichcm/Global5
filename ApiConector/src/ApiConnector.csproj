@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<PackageId>APIConnector</PackageId>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Version>1.0.7</Version>
+		<Authors>CodeHolistic Developer</Authors>
+		<Company>CodeHolistic</Company>
+		<Description>
+			Biblioteca para conectar em API Externas.			
+		</Description>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageReleaseNotes>Criação de get com Header Parameters.</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="Polly" Version="7.2.1" />
+	</ItemGroup>
+
+</Project>
+

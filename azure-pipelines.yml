@@ -1,0 +1,18 @@
+trigger:
+  tags:
+    include:
+      - '*'
+  branches:
+    include:
+      - '*'
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: JCA_DEVOPS/jca-devops-templates.azure-pipeline
+
+extends:
+  template: pipeline_deploy_job.yaml@templates
+  parameters:
+    repoName: 'jca-bank-slip' 
