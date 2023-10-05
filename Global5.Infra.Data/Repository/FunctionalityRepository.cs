@@ -4,6 +4,7 @@ using Global5.Domain.Interfaces.Repository;
 using Global5.Infra.Data.Queries;
 using MiniProfiler.Integrations;
 using MySqlConnector;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -46,9 +47,9 @@ namespace Global5.Infra.Data.Repository
                 cmd.Parameters.Add(existsParam);
 
                 await cmd.ExecuteNonQueryAsync();
+                UInt64 byteValue = (UInt64)existsParam.Value;
 
-                bool exists = (bool)existsParam.Value;
-                return exists;
+                return byteValue != 0;
             }
         }
     }

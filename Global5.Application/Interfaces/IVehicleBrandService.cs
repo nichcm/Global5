@@ -11,10 +11,10 @@ namespace Global5.Application.Interfaces
 {
     public interface IVehicleBrandService
     {
-        Task<VehicleBrandResponse> SelectVehicleBrandById(int vehicleBrandId);
+        Task<VehicleBrandResponse> SelectVehicleBrandById(int vehicleBrandId, int userId);
         Task<VehicleBrandResponse> InsertVehicleBrand(VehicleBrandRequest request, int userId);
         Task<VehicleBrandResponse> UpdateVehicleBrand(VehicleBrandRequest request, int userId);
-        Task<IEnumerable<VehicleBrandResponse>> SelectVehicleBrand(VehicleBrandPageRequest request);
+        Task<IEnumerable<VehicleBrandResponse>> SelectVehicleBrand(VehicleBrandPageRequest request, int userId);
         Task<IEnumerable<VehicleBrandResponse>> SelectVehicleBrandByName(string brandName);
         Task ToggleVehicleBrandActiveStatus(int brandId,int  userId);
     }

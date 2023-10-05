@@ -12,9 +12,6 @@ namespace Global5.Domain.Interfaces.Repository
         Task<VehicleBrand> SelectVehicleBrandById(int brandId);
         Task<VehicleBrand> InsertVehicleBrand(VehicleBrand model);
         Task<IEnumerable<VehicleBrand>> SelectVehicleBrand(
-                    bool? national,
-                    string name,
-                    bool? active,
                     int pageSize,
                     int pageNumber);
         Task<VehicleBrand> UpdateVehicleBrand(VehicleBrand model);

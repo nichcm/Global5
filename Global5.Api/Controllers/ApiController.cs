@@ -52,7 +52,7 @@ namespace Global5.Api.Controllers
 
             if (_userToken != null && _userToken.Claims.Any())
             {
-                if (_userToken.FindFirst("UserId") != null)
+                if (_userToken.FindFirst("UserLoginId") != null)
                 {
                     if (_httpContextAccessor != null)
                     {
@@ -92,7 +92,7 @@ namespace Global5.Api.Controllers
                         NewValue = requestValue,
                         OldValue = requestOldValue,
                         FunctionalityCode = actionName,
-                        Id = string.Empty
+                        Id = string.Empty,
                     };
                     _logService.LogHistoryCreate(logHistoryDataRequest, GetContextUser());
                 }

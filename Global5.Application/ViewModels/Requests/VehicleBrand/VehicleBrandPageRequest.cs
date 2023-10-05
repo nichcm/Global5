@@ -10,8 +10,5 @@ namespace Global5.Application.ViewModels.Requests.VehicleBrand
     {
         public int PageSize { get; set; }
         public int PageNumber { get; set; }
-        public string Name { get; set; }
-        public bool? IsNational { get; set; }
-        public bool? Active { get; set; }
     }
 }

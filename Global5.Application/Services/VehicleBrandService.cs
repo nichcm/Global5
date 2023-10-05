@@ -37,32 +37,37 @@ namespace Global5.Application.Services
             _functionalityRepository = functionalityRepository;
 
         }
-        public async Task<VehicleBrandResponse> SelectVehicleBrandById(int vehicleBrandId)
+        public async Task<VehicleBrandResponse> SelectVehicleBrandById(int vehicleBrandId, int userId)
         {
+
+            var canEdit = await _functionalityRepository.CheckFunctionalityExists(userId, "Select");
+
+            if (!canEdit) return null;
+
             return _mapper.Map<VehicleBrandResponse>(await _vehicleBrandRepository.SelectVehicleBrandById(vehicleBrandId));
         }
 
         public async Task<VehicleBrandResponse> InsertVehicleBrand(VehicleBrandRequest request, int userId)
         {
-            var canEdit = await _functionalityRepository.CheckFunctionalityExists(userId, "InsertVehicleBrand");
+            var canEdit = await _functionalityRepository.CheckFunctionalityExists(userId, "Insert");
             if (!canEdit) return null;
             var model = _mapper.Map<VehicleBrand>(request);
             return _mapper.Map<VehicleBrandResponse>(await _vehicleBrandRepository.InsertVehicleBrand(model));
         }
         public async Task<VehicleBrandResponse> UpdateVehicleBrand(VehicleBrandRequest request, int userId)
         {
-            var canEdit = await _functionalityRepository.CheckFunctionalityExists(userId, "UpdateVehicleBrand");
+            var canEdit = await _functionalityRepository.CheckFunctionalityExists(userId, "Update");
 
             if (!canEdit) return null;
             var model = _mapper.Map<VehicleBrand>(request);
             return _mapper.Map<VehicleBrandResponse>(await _vehicleBrandRepository.UpdateVehicleBrand(model));
         }
-        public async Task<IEnumerable<VehicleBrandResponse>> SelectVehicleBrand(VehicleBrandPageRequest request)
+        public async Task<IEnumerable<VehicleBrandResponse>> SelectVehicleBrand(VehicleBrandPageRequest request, int userId)
         {
+            var canEdit = await _functionalityRepository.CheckFunctionalityExists(userId, "Select");
+            if (!canEdit) return null;
+
             var brands = await _vehicleBrandRepository.SelectVehicleBrand(
-                request.IsNational,
-                request.Name,
-                request.Active,
                 request.PageSize,
                 request.PageNumber
             );
@@ -78,7 +83,7 @@ namespace Global5.Application.Services
 
         public async Task ToggleVehicleBrandActiveStatus(int brandId, int userId)
         {
-            var canEdit = await _functionalityRepository.CheckFunctionalityExists(userId, "UpdateVehicleBrand");
+            var canEdit = await _functionalityRepository.CheckFunctionalityExists(userId, "Update");
             if (!canEdit) return;
             await _vehicleBrandRepository.ToggleVehicleBrandActiveStatus(brandId);
         }

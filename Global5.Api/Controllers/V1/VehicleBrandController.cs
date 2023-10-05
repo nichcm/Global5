@@ -129,14 +129,14 @@ namespace Schedule.Api.Controllers.V1
 
                 var response = await _vehicleBrandService.SelectVehicleBrandByName(request.BrandName);
 
-                if (response.Any())
+                if (response.Count() > 1)
                 {
                     var validation = new ValidationResult();
                     validation.Errors.Add(new ValidationFailure("", Translate("vehiclebrand-name-already-in-use").Message));
                     return CustomExceptionValidationResponse(validation);
                 }
 
-                var responseVehicle = await _vehicleBrandService.InsertVehicleBrand(request, GetContextUser().UserLoginId);
+                var responseVehicle = await _vehicleBrandService.UpdateVehicleBrand(request, GetContextUser().UserLoginId);
                 CreateHistory(request, responseVehicle);
                 return CustomResponse<ICreatedResponse>(responseVehicle, "scheduleFile");
             }

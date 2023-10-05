@@ -51,9 +51,6 @@ namespace Global5.Infra.Data.Repository
         }
 
         public async Task<IEnumerable<VehicleBrand>> SelectVehicleBrand(
-            bool? national,
-            string name,
-            bool? active,
             int pageSize,
             int pageNumber)
         {
@@ -63,9 +60,6 @@ namespace Global5.Infra.Data.Repository
 
                 var parameters = new
                 {
-                    p_National = national,
-                    p_Name = name,
-                    p_Active = active,
                     p_pageSize = pageSize,
                     p_pageNumber = pageNumber
                 };
