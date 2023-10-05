@@ -3,6 +3,7 @@ using Global5.Api.Controllers;
 using Global5.Application.Interfaces;
 using Global5.Application.ViewModels;
 using Global5.Application.ViewModels.Requests.VehicleBrand;
+using Global5.Domain.Entities;
 using Global5.Domain.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -40,7 +41,9 @@ namespace Schedule.Api.Controllers.V1
         {
             try
             {
-                return CustomResponse<IResponse>(await _vehicleBrandService.SelectVehicleBrandById(vehicleBrandId));
+                var vehicleBrand = await _vehicleBrandService.SelectVehicleBrandById(vehicleBrandId);
+                CreateHistory(vehicleBrandId, vehicleBrand);
+                return CustomResponse<IResponse>(vehicleBrand);
             }
             catch (Exception ex)
             {
@@ -55,7 +58,9 @@ namespace Schedule.Api.Controllers.V1
         {
             try
             {
-                return CustomResponse<ICreatedResponse>(await _vehicleBrandService.SelectVehicleBrand(request), "vehicleBrand");
+                var vehicleResponse = await _vehicleBrandService.SelectVehicleBrand(request);
+                CreateHistory(request, vehicleResponse);
+                return CustomResponse<ICreatedResponse>(vehicleResponse, "vehicleBrand");
             }
             catch (Exception ex)
             {
@@ -92,8 +97,9 @@ namespace Schedule.Api.Controllers.V1
                     validation.Errors.Add(new ValidationFailure("", Translate("vehiclebrand-name-already-in-use").Message));
                     return CustomExceptionValidationResponse(validation);
                 }
-
-                return CustomResponse<ICreatedResponse>(await _vehicleBrandService.InsertVehicleBrand(request, GetContextUser().UserLoginId), "scheduleFile");
+                var responseVehicle = await _vehicleBrandService.InsertVehicleBrand(request, GetContextUser().UserLoginId);
+                CreateHistory(request, responseVehicle);
+                return CustomResponse<ICreatedResponse>(responseVehicle, "scheduleFile");
             }
             catch (Exception ex)
             {
@@ -130,7 +136,9 @@ namespace Schedule.Api.Controllers.V1
                     return CustomExceptionValidationResponse(validation);
                 }
 
-                return CustomResponse<ICreatedResponse>(await _vehicleBrandService.UpdateVehicleBrand(request, GetContextUser().UserLoginId), "scheduleFile");
+                var responseVehicle = await _vehicleBrandService.InsertVehicleBrand(request, GetContextUser().UserLoginId);
+                CreateHistory(request, responseVehicle);
+                return CustomResponse<ICreatedResponse>(responseVehicle, "scheduleFile");
             }
             catch (Exception ex)
             {
@@ -158,7 +166,10 @@ namespace Schedule.Api.Controllers.V1
                     return CustomExceptionValidationResponse(validation);
                 }
 
+
                 await _vehicleBrandService.ToggleVehicleBrandActiveStatus(request.Id, GetContextUser().UserLoginId);
+                
+                CreateHistory(request, null);
 
                 return CustomResponse<ICreatedResponse>();
             }

@@ -60,7 +60,9 @@ namespace Schedule.Api.Controllers.V1
                     return CustomExceptionValidationResponse(validation);
                 }
 
-                return CustomResponse<ICreatedResponse>(await _usersService.AuthUserLogin(request), "userLogin");
+                var response = await _usersService.AuthUserLogin(request);
+
+                return CustomResponse<ICreatedResponse>(response, "userLogin");
             }
             catch (Exception ex)
             {

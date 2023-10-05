@@ -68,7 +68,7 @@ namespace Global5.Api.Controllers
             }
             return tokenUserResponse;
         }
-        private void CreateHistory(object request, object oldValue)
+        protected void CreateHistory(object request, object oldValue)
         {
             if (true)
             {
