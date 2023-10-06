@@ -49,10 +49,13 @@ VALUES
    
 INSERT INTO Functionality (IdUser,FunctionalityCode)
 VALUES
-    (1, 'InsertVehicleBrand'),
-   	(1, 'UpdateVehicleBrand'),
-   	(2, 'UpdateVehicleBrand'),
-   	(2, 'InsertVehicleBrand');
+    (1, 'Select'),
+   	(1, 'Insert'),
+   	(1, 'Update'),
+   	(1, 'Update'),
+   	(2, 'Select'),
+   	(2, 'Insert');
+   
    
 INSERT INTO VehicleBrands (IsNational, Status, BrandName, CreatedBy, IsActive)
 VALUES
