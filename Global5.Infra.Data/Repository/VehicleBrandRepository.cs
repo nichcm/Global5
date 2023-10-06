@@ -54,6 +54,29 @@ namespace Global5.Infra.Data.Repository
             }
         }
 
+        public async Task<VehicleBrand> UpdateVehicleBrand(VehicleBrand model)
+        {
+            var factory = new SqlServerDbConnectionFactory(_connectionString);
+            using (var connection = ProfiledDbConnectionFactory.New(factory, _customDbProfiler))
+            {
+                var parameters = new
+                {
+                    p_Id = model.Id,
+                    p_IsNational = model.IsNational,
+                    p_Status = model.Status,
+                    p_BrandName = model.BrandName,
+                    p_UpdatedBy = model.UpdateBy
+                };
+
+                await connection.ExecuteAsync(
+                    "UpdateVehicleBrand", // Replace with the actual stored procedure name
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return model;
+            }
+        }
 
         public async Task<IEnumerable<VehicleBrand>> SelectVehicleBrand(int pageSize, int pageNumber)
         {
