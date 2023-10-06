@@ -41,7 +41,7 @@ namespace Schedule.Api.Controllers.V1
         {
             try
             {
-                var vehicleBrand = await _vehicleBrandService.SelectVehicleBrandById(vehicleBrandId);
+                var vehicleBrand = await _vehicleBrandService.SelectVehicleBrandById(vehicleBrandId, GetContextUser().UserLoginId);
                 CreateHistory(vehicleBrandId, vehicleBrand);
                 return CustomResponse<IResponse>(vehicleBrand);
             }
@@ -58,7 +58,7 @@ namespace Schedule.Api.Controllers.V1
         {
             try
             {
-                var vehicleResponse = await _vehicleBrandService.SelectVehicleBrand(request);
+                var vehicleResponse = await _vehicleBrandService.SelectVehicleBrand(request, GetContextUser().UserLoginId);
                 CreateHistory(request, vehicleResponse);
                 return CustomResponse<ICreatedResponse>(vehicleResponse, "vehicleBrand");
             }
