@@ -32,25 +32,24 @@ namespace Global5.Infra.Data.Repository
 
         public async Task<bool> CheckFunctionalityExists(int userId, string functionalityCode)
         {
-            using (var connection = new MySqlConnection(_connectionString))
+            var factory = new SqlServerDbConnectionFactory(_connectionString);
+            using (var connection = ProfiledDbConnectionFactory.New(factory, _customDbProfiler))
             {
-                await connection.OpenAsync();
+                var parameters = new DynamicParameters();
+                parameters.Add("@p_IdUser", userId);
+                parameters.Add("@p_FunctionalityCode", functionalityCode);
+                parameters.Add("@p_Exists", dbType: DbType.Boolean, direction: ParameterDirection.Output);
 
-                var cmd = new MySqlCommand("CheckFunctionalityByUserIdAndCode", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
+                await connection.ExecuteAsync(
+                    "CheckFunctionalityByUserIdAndCode", // Replace with the actual stored procedure name
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
 
-                cmd.Parameters.AddWithValue("p_IdUser", userId);
-                cmd.Parameters.AddWithValue("p_FunctionalityCode", functionalityCode);
-
-                var existsParam = new MySqlParameter("p_Exists", MySqlDbType.Bit);
-                existsParam.Direction = ParameterDirection.Output;
-                cmd.Parameters.Add(existsParam);
-
-                await cmd.ExecuteNonQueryAsync();
-                UInt64 byteValue = (UInt64)existsParam.Value;
-
-                return byteValue != 0;
+                bool exists = parameters.Get<bool>("@p_Exists");
+                return exists;
             }
         }
+
     }
 }

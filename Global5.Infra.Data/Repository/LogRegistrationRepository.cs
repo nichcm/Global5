@@ -7,6 +7,7 @@ using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -31,10 +32,9 @@ namespace Global5.Infra.Data.Repository
 
         public async Task InsertLogRegistration(LogRegistration log)
         {
-            using (var connection = new MySqlConnection(_connectionString))
+            var factory = new SqlServerDbConnectionFactory(_connectionString);
+            using (var connection = ProfiledDbConnectionFactory.New(factory, _customDbProfiler))
             {
-                connection.Open();
-
                 var parameters = new
                 {
                     p_ChangeDate = log.ChangeDate,
@@ -44,8 +44,14 @@ namespace Global5.Infra.Data.Repository
                     p_NewValue = log.NewValue
                 };
 
-                await connection.ExecuteAsync("InsertLogRegistration", parameters, commandType: CommandType.StoredProcedure);
+                await connection.ExecuteAsync(
+                    "InsertLogRegistration", // Replace with the actual stored procedure name
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
             }
         }
+
+
     }
 }

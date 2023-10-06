@@ -1,15 +1,10 @@
 ﻿using Dapper;
 using Global5.Domain.Entities;
 using Global5.Domain.Interfaces.Repository;
-using Global5.Infra.Data.Queries;
 using MiniProfiler.Integrations;
-using MySqlConnector;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Reflection;
-using System.Text;
+using System.Data.SqlClient;
 using System.Threading.Tasks;
 
 namespace Global5.Infra.Data.Repository
@@ -33,16 +28,21 @@ namespace Global5.Infra.Data.Repository
         {
             Users model = null;
 
-            using (var connection = new MySqlConnection(_connectionString))
+            var factory = new SqlServerDbConnectionFactory(_connectionString);
+            using (var connection = ProfiledDbConnectionFactory.New(factory, _customDbProfiler))
             {
-                connection.Open();
-
                 var parameters = new DynamicParameters();
                 parameters.Add("@p_email", email);
 
-                model = connection.QueryFirstOrDefault<Users>(UsersQuery.SelectUserByEmail, parameters, commandType: CommandType.StoredProcedure);
+                model = await connection.QueryFirstOrDefaultAsync<Users>(
+                    "SelectUserByEmail", // Replace with the actual stored procedure name
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
             }
             return model;
         }
+
+
     }
 }

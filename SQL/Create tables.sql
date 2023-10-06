@@ -52,10 +52,8 @@ VALUES
     (1, 'Select'),
    	(1, 'Insert'),
    	(1, 'Update'),
-   	(1, 'Update'),
    	(2, 'Select'),
    	(2, 'Insert');
-   
    
 INSERT INTO VehicleBrands (IsNational, Status, BrandName, CreatedBy, IsActive)
 VALUES

@@ -1,5 +1,6 @@
 ﻿using MySqlConnector;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Global5.Infra.Data.DataBase
 {
@@ -7,7 +8,7 @@ namespace Global5.Infra.Data.DataBase
     {
         public static IDbConnection GetConnection(string connectionString, DataBaseService dataBaseService)
         {
-            var connection = new MySqlConnection(connectionString);
+            var connection = new SqlConnection(connectionString);
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
