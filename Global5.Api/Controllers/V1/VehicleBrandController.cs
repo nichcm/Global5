@@ -36,7 +36,6 @@ namespace Schedule.Api.Controllers.V1
        
         [HttpGet]
         [Route("selectVehicleBrandById")]
-        [AllowAnonymous]
         public async Task<IActionResult> SelectVehicleBrandById(int vehicleBrandId)
         {
             try
@@ -53,7 +52,6 @@ namespace Schedule.Api.Controllers.V1
 
         [HttpPost]
         [Route("selectVehicleBrand")]
-        [AllowAnonymous]
         public async Task<IActionResult> SelectVehicleBrand([FromBody] VehicleBrandPageRequest request)
         {
             try
